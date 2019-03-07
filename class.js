@@ -7,12 +7,17 @@ class Rectangle {
         
     }
     //adding a getter 
-     getArea(){
+    get area(){
         return this.width*this.height
     }
     //description method
     printDescription(){
         console.log(`Creating a rectangle of ${this.width}*${this.height}`);
+    }
+    set area(area){
+        this.width = Math.sqrt(area)
+        this.height = this.width
+
     }
 }
 
